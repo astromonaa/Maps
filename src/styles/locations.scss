@@ -1,0 +1,47 @@
+.locations {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.location-item {
+  padding: 10px 14px;
+  background-color: #3a3d3e;
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    box-shadow: 2px 1px 10px 1px rgba(0, 0, 0, 0.3);
+  }
+
+  .budgets {
+    margin-top: 13px;
+    display: flex;
+    gap: 13px;
+
+    span {
+      padding: 3px 5px;
+      color: #969c9f;
+      font-size: 12px;
+      line-height: 18px;
+      background-color: #282c2d;
+      border-radius: 0.2em;
+    }
+  }
+}
+[data-rbd-droppable-context-id] {
+  width: 49%;
+}
+
+.desc {
+  display: block;
+  text-align: center;
+  font-style: italic;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+@media(max-width: 900px) {
+  [data-rbd-droppable-context-id] {
+    width: 100%;
+  }
+}
